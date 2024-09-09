@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+:root{
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 html{
-    font-family: Poppins, sans-serif;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h1{
-    position: relative;
-    width: max-content;
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
-h1::after{
-    content: '';
-    background: linear-gradient(to right, red, blue);
-    border-radius: 100px;
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    bottom:0;
-    left:0;
-    transition: 500ms ease;
-}
-
-h1:hover::after{
-    width:0;
+main{
+    padding: min(30px, 7%);
 }
